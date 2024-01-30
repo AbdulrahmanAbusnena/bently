@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Container(
         height: 300,
+        color: Colors.red,
         child: PageView.builder(
             itemCount: 7,
             itemBuilder: (context, position) {
