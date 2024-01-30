@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
       Align(
         alignment: Alignment.bottomCenter,
         child: Container(
-          height: 140,
+          height: 135,
           margin: const EdgeInsets.only(right: 40, left: 40, bottom: 15),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40), color: Colors.white
