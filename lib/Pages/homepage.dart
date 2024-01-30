@@ -50,20 +50,19 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _widget(int index) {
-    return Stack(
-        //   alignment: ,
-        children: [
-          Container(
-            height: 310,
-            margin: const EdgeInsets.only(right: 5, left: 5),
-            decoration: BoxDecoration(
-                image: const DecorationImage(
-                    fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
-                borderRadius: BorderRadius.circular(40),
-                color: index.isEven ? Colors.blueGrey : Colors.green[200]),
-            // child: const Column(children: []),
-          ),
-          Container(),
-        ]);
+    return Stack(children: [
+      Container(
+        height: 210,
+
+        margin: const EdgeInsets.only(right: 5, left: 5),
+        decoration: BoxDecoration(
+            image: const DecorationImage(
+                fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
+            borderRadius: BorderRadius.circular(40),
+            color: index.isEven ? Colors.blueGrey : Colors.green[200]),
+        // child: const Column(children: []),
+      ),
+      Container(),
+    ]);
   }
 }
