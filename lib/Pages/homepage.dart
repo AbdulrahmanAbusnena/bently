@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
         margin: const EdgeInsets.only(right: 5, left: 5),
         decoration: BoxDecoration(
           image: const DecorationImage(
-              fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
+              fit: BoxFit.cover, image: AssetImage('assets/food1.jpg')),
           borderRadius: BorderRadius.circular(40),
           // color: index.isEven ? Colors.blueGrey : Colors.green[200]
         ),
