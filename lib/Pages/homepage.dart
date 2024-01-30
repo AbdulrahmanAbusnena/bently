@@ -57,24 +57,22 @@ class _HomePageState extends State<HomePage> {
 
         margin: const EdgeInsets.only(right: 5, left: 5),
         decoration: BoxDecoration(
-            image: const DecorationImage(
-                fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
-            borderRadius: BorderRadius.circular(40),
-            color: index.isEven ? Colors.blueGrey : Colors.green[200]),
+          image: const DecorationImage(
+              fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
+          borderRadius: BorderRadius.circular(40),
+          // color: index.isEven ? Colors.blueGrey : Colors.green[200]
+        ),
         // child: const Column(children: []),
       ),
       Align(
-        // alignment: ,
+        alignment: Alignment.bottomCenter,
         child: Container(
-          height: 210,
-
-          margin: const EdgeInsets.only(right: 5, left: 5),
+          height: 140,
+          margin: const EdgeInsets.only(right: 40, left: 40, bottom: 15),
           decoration: BoxDecoration(
-              image: const DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
-              borderRadius: BorderRadius.circular(40),
-              color: index.isEven ? Colors.blueGrey : Colors.green[200]),
-          // child: const Column(children: []),
+              borderRadius: BorderRadius.circular(40), color: Colors.white
+              // child: const Column(children: []),
+              ),
         ),
       ),
     ]);
