@@ -1,4 +1,4 @@
-import 'package:bentlly/Pages/homepage.dart';
+import 'package:bentlly/Pages/registrationview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'bentlly',
-      home: HomePage(),
+      home: RegistrationView(),
     );
   }
 }

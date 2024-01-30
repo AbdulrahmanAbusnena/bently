@@ -77,7 +77,7 @@ class _RegistrationViewState extends State<RegistrationView> {
             TextButton(
               onPressed: () {
                 Navigator.pop(context);
-              },
+              },  
               child: Text(
                 'Exit',
                 style: GoogleFonts.montserrat(

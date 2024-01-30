@@ -22,7 +22,9 @@ class _HomePageState extends State<HomePage> {
               fontWeight: FontWeight.bold,
             )),
         centerTitle: true,
-        leading: const CircleAvatar(),
+        leading: const CircleAvatar(
+          backgroundImage: AssetImage('assets/image.png'),
+        ),
         actions: [
           IconButton.filled(
             style: iconButton1,
@@ -37,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         //     backgroundColor: Colors.blueGrey,
       ),
       body: Container(
-        height: 210,
+        height: 300,
         child: PageView.builder(
             itemCount: 7,
             itemBuilder: (context, position) {
@@ -48,17 +50,20 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _widget(int index) {
-    return Stack(children: [
-      Container(
-        height: 310,
-        margin: const EdgeInsets.only(right: 5, left: 5),
-        decoration: BoxDecoration(
-            image: const DecorationImage(
-                fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
-            borderRadius: BorderRadius.circular(40),
-            color: index.isEven ? Colors.blueGrey : Colors.green[200]),
-        // child: const Column(children: []),
-      ),
-    ]);
+    return Stack(
+        //   alignment: ,
+        children: [
+          Container(
+            height: 310,
+            margin: const EdgeInsets.only(right: 5, left: 5),
+            decoration: BoxDecoration(
+                image: const DecorationImage(
+                    fit: BoxFit.cover, image: AssetImage('assets/food.jpg')),
+                borderRadius: BorderRadius.circular(40),
+                color: index.isEven ? Colors.blueGrey : Colors.green[200]),
+            // child: const Column(children: []),
+          ),
+          Container(),
+        ]);
   }
 }

@@ -11,8 +11,8 @@ final ElevatedButton1 = ElevatedButton.styleFrom(
 
 final iconButton1 = IconButton.styleFrom(
   minimumSize: const Size(
-    25,
-    40,
+    45,
+    45,
   ),
   elevation: 0.0,
   backgroundColor: Colors.lightGreen,
