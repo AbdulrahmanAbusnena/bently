@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
         alignment: Alignment.bottomCenter,
         child: Container(
           height: 135,
-          margin: const EdgeInsets.only(right: 40, left: 40, bottom: 15),
+          margin: const EdgeInsets.only(right: 50, left: 50, bottom: 20),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40), color: Colors.white
               // child: const Column(children: []),
