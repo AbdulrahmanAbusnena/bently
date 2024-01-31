@@ -12,6 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final pageController = PageController(viewportFraction: 0.85);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,6 +43,7 @@ class _HomePageState extends State<HomePage> {
         height: 300,
         color: Colors.red,
         child: PageView.builder(
+            controller: pageController,
             itemCount: 7,
             itemBuilder: (context, position) {
               return _widget(position);
@@ -58,7 +60,7 @@ class _HomePageState extends State<HomePage> {
         margin: const EdgeInsets.only(right: 5, left: 5),
         decoration: BoxDecoration(
           image: const DecorationImage(
-              fit: BoxFit.cover, image: AssetImage('assets/food1.jpg')),
+              fit: BoxFit.cover, image: AssetImage('assets/foody.jpg')),
           borderRadius: BorderRadius.circular(40),
           // color: index.isEven ? Colors.blueGrey : Colors.green[200]
         ),
@@ -68,11 +70,23 @@ class _HomePageState extends State<HomePage> {
         alignment: Alignment.bottomCenter,
         child: Container(
           height: 135,
-          margin: const EdgeInsets.only(right: 50, left: 50, bottom: 20),
+          margin: const EdgeInsets.only(right: 30, left: 30, bottom: 20),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40), color: Colors.white
               // child: const Column(children: []),
               ),
+          child: Column(children: [
+            Text(
+              'Pizza Margreata ',
+              style: GoogleFonts.montserrat(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              //   textAlign: TextAlign.center,
+              //   maxLines: 1,
+            ),
+            const Row(),
+          ]),
         ),
       ),
     ]);
