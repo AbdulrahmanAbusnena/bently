@@ -1,6 +1,7 @@
 // ignore_for_file: sized_box_for_whitespace
 
 import 'package:bentlly/Designs/theme.dart';
+import 'package:bentlly/Materials/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,6 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const MYDrawer(),
       appBar: AppBar(
         title: Text('Bently',
             style: GoogleFonts.montserrat(
@@ -75,18 +77,38 @@ class _HomePageState extends State<HomePage> {
               borderRadius: BorderRadius.circular(40), color: Colors.white
               // child: const Column(children: []),
               ),
-          child: Column(children: [
-            Text(
-              'Pizza Margreata ',
-              style: GoogleFonts.montserrat(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+          child: Container(
+            padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(
+                'Pizza Margreata ',
+                style: GoogleFonts.montserrat(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+                //   textAlign: TextAlign.center,
+                //   maxLines: 1,
               ),
-              //   textAlign: TextAlign.center,
-              //   maxLines: 1,
-            ),
-            const Row(),
-          ]),
+              Row(
+                children: [
+                  Wrap(
+                    children: [
+                      ListView(
+                        children: List.generate(5, (index) {
+                          return const Icon(
+                            Icons.star,
+                            color: Colors.yellow,
+                            size: 50.0,
+                          );
+                        }),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ]),
+          ),
         ),
       ),
     ]);
