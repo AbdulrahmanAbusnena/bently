@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // final pageController = PageController(viewportFraction: 0.85);
+  final pageController = PageController(viewportFraction: 0.85);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         height: 300,
         color: Colors.red,
         child: PageView.builder(
-            // controller: pageController,
+            controller: pageController,
             itemCount: 7,
             itemBuilder: (context, position) {
               return _widget(position);
