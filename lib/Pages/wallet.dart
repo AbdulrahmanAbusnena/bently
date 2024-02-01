@@ -19,18 +19,17 @@ class MyWallet extends StatelessWidget {
         backgroundColor: Colors.yellow[300],
       ),
       body: SafeArea(
-        child: Center(
-          child: Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
-            child: const Column(
-              children: [
-                Icon(Icons.account_balance_wallet_rounded),
-                Text('£234.4')
-              ],
-            ),
+          child: Center(
+        child: Container(
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+          child: const Column(
+            children: [
+              Icon(Icons.account_balance_wallet_rounded),
+              Text('£234.4'),
+            ],
           ),
         ),
-      ),
+      )),
     );
   }
 }

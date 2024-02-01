@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final pageController = PageController(viewportFraction: 0.85);
+  // final pageController = PageController(viewportFraction: 0.85);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         height: 300,
         color: Colors.red,
         child: PageView.builder(
-            controller: pageController,
+            // controller: pageController,
             itemCount: 7,
             itemBuilder: (context, position) {
               return _widget(position);
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(
-                'Pizza Margreata ',
+                'Pizza Margreata',
                 style: GoogleFonts.montserrat(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -104,7 +104,49 @@ class _HomePageState extends State<HomePage> {
                         }),
                       ),
                     ],
-                  )
+                  ),
+                  Text('4.5',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 12,
+                        color: Colors.grey[300],
+                      )),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text('5,800 comments',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 12,
+                      )),
+                  Text('Top',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 12, color: Colors.grey[300])),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  const Icon(
+                    Icons.circle,
+                    color: Colors.orange,
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  const Text('Normal'),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Icon(Icons.location_on, color: Colors.green[300]),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  const Text('1.2km'),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Icon(Icons.timer, color: Colors.red[200]),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  const Text('32 mins'),
                 ],
               ),
             ]),
