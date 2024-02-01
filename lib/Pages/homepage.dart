@@ -78,6 +78,7 @@ class _HomePageState extends State<HomePage> {
               // child: const Column(children: []),
               ),
           child: Container(
+            //  height: 100,
             padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -92,7 +93,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Row(
                 children: [
-                  Wrap(
+                  /*    Wrap(
                     children: [
                       ListView(
                         children: List.generate(5, (index) {
@@ -104,25 +105,28 @@ class _HomePageState extends State<HomePage> {
                         }),
                       ),
                     ],
-                  ),
+                  ),*/
+
                   Text('4.5',
                       style: GoogleFonts.montserrat(
                         fontSize: 12,
-                        color: Colors.grey[300],
+                        //    color: Colors.grey[300],
                       )),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Text('5,800 comments',
-                      style: GoogleFonts.montserrat(
-                        fontSize: 12,
-                      )),
-                  Text('Top',
-                      style: GoogleFonts.montserrat(
-                          fontSize: 12, color: Colors.grey[300])),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  //  const SizedBox(
+                  //   height: 10,
+                  //  ),
+                  //Text('5,800 comments',
+                  // style: GoogleFonts.montserrat(
+                  //     fontSize: 12,
+                  //    )),
+                  //  Text('Top',
+                  //    style: GoogleFonts.montserrat(
+                  //      fontSize: 12,
+                  //  color: const Color.fromRGBO(224, 224, 224, 1)
+                  //     )),
+                  //   const SizedBox(
+                  //     height: 20,
+                  //   ),
                   const Icon(
                     Icons.circle,
                     color: Colors.orange,
@@ -131,21 +135,21 @@ class _HomePageState extends State<HomePage> {
                     width: 4,
                   ),
                   const Text('Normal'),
-                  const SizedBox(
-                    width: 10,
-                  ),
+                  //  const SizedBox(
+                  //    width: 10,
+                  //   ),
                   Icon(Icons.location_on, color: Colors.green[300]),
                   const SizedBox(
                     width: 4,
                   ),
                   const Text('1.2km'),
-                  const SizedBox(
-                    width: 10,
-                  ),
+                  // const SizedBox(
+                  //    width: 10,
+                  //   ),
                   Icon(Icons.timer, color: Colors.red[200]),
-                  const SizedBox(
-                    width: 5,
-                  ),
+                  //  const SizedBox(
+                  //   width: 5,
+                  //  ),
                   const Text('32 mins'),
                 ],
               ),
